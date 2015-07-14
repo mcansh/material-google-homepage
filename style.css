@@ -59,6 +59,9 @@ nav {
       color: #F5F5F5; }
     .main .search .material-icons {
       color: #F5F5F5; }
+    .main .search .right-side {
+      display: flex;
+      align-items: center; }
 
 footer {
   height: 50px;
