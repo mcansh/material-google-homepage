@@ -1,0 +1,75 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
+* {
+  margin: 0; }
+
+body {
+  font-family: "Roboto Condensed";
+  background: #F5F5F5; }
+
+nav {
+  height: 70px;
+  background: #1E6DE7;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  line-height: 1.25em;
+  padding: 0 30px; }
+  nav .brand {
+    display: flex;
+    flex-grow: 1;
+    color: #F5F5F5; }
+  nav .links {
+    display: flex;
+    align-items: center; }
+    nav .links a {
+      color: #F5F5F5;
+      padding: 0 10px;
+      transition: 100ms all ease-in-out; }
+    nav .links .active {
+      color: #062C92; }
+    nav .links a:hover {
+      color: #062c92; }
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 120px); }
+  .main .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .main .search {
+    margin-top: 20px;
+    width: 720px;
+    height: 50px;
+    background: #C0C0C0;
+    display: flex;
+    flex-direction: row;
+    padding: 0 30px;
+    align-items: center; }
+    .main .search .left-side {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      flex-grow: 1; }
+    .main .search p {
+      padding-left: 20px;
+      color: #F5F5F5; }
+    .main .search .material-icons {
+      color: #F5F5F5; }
+
+footer {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 30px;
+  background: #F2F2F2;
+  border-top: 1px solid #ddd;
+  font-size: 14px; }
+  footer a {
+    padding: 0 10px; }
+  footer .left-links {
+    flex-grow: 1; }
