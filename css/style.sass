@@ -6,9 +6,11 @@ $silver: #C0C0C0
 $dark-white: #F2F2F2
 *
   margin: 0
+
 body
   font-family: "Roboto Condensed"
   background: $white
+  width: 100vw
 nav
   height: 70px
   background: #1E6DE7
@@ -46,24 +48,17 @@ nav
     display: flex
     justify-content: center
     align-items: center
-  .search
-    margin-top: 20px
-    width: 600px
+  input
     height: 50px
+    width: 600px
     background: $silver
-    display: flex
-    flex-direction: row
     padding: 0 30px
-    align-items: center
-    input
-      height: 90%
-      width: 100%
-      background: transparent
-      padding: 0 30px
-      margin: 0 -30px
-      outline: none
-      font-size: 1.1em
-      font-family: "Roboto Condensed"
+    margin: 20px -30px 0 -30px
+    outline: none
+    font-size: 1.1em
+    font-family: "Roboto Condensed"
+    border-radius: 0px
+    border: none
 footer
   height: 50px
   display: flex
@@ -82,3 +77,29 @@ footer
       color: black
   .left-links
     flex-grow: 1
+
+
+@media (max-width: 500px)
+  nav
+    padding: 0px 10px
+    .brand
+      margin-right: 10px
+    a:nth-child(2)
+      display: none
+  .main
+    height: calc(100vh - 220px)
+    padding: 30px 0
+    width: 100vw
+    flex-grow: 1
+    input
+      max-width: 300px
+      height: 35px
+      padding: 0 50px 0 10px
+  footer
+    height: 70px
+    flex-direction: column
+    justify-content: center
+    padding-bottom: 20px
+    .left-links
+      flex-grow: 0
+      padding: 20px 0
