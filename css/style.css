@@ -88,6 +88,8 @@ nav {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
+    .main .logo img {
+      width: 40%; }
   .main input {
     height: 50px;
     width: 600px;
@@ -133,6 +135,9 @@ footer {
         -ms-flex-positive: 1;
             flex-grow: 1; }
 
+@media (max-width: 700px) {
+  input {
+    max-width: 60vw; } }
 @media (max-width: 500px) {
   nav {
     padding: 0px 10px; }
@@ -149,6 +154,8 @@ footer {
     -webkit-flex-grow: 1;
         -ms-flex-positive: 1;
             flex-grow: 1; }
+    .main .logo img {
+      width: 50%; }
     .main input {
       max-width: 300px;
       height: 35px;
