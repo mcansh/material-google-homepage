@@ -1,5 +1,5 @@
 doctype html
-html
+html(lang="en")
   head
     title Google
     meta(charset="utf-8")
@@ -14,7 +14,7 @@ html
         h1 Search
       .links
         a.active +User
-        a(href="https://gmail.com") Gmail
+        a(href="https://inbox.google.com") Gmail
         a(href="https://images.google.com") Images
         a(href="").box
           i(class="material-icons") apps
@@ -27,9 +27,10 @@ html
       .logo
         img(src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Logo_Google_2013_Official.svg/1280px-Logo_Google_2013_Official.svg.png")
       .search
-        input(autocomplete="off",autocorrect="off",autocapitalize="off",spellcheck="false",placeholder="Search")
+        form(method="get",action="http://www.google.com/search")
+          input(type="text",placeholder="Search",name="q",size="31",maxlength="255",value="")
+          input(type="submit",name="sa",value="Search Google",style="display:none")
 
-    
     footer
       .left-links
         a(href="https://www.google.com/intl/en/ads/?fg=1") Advertising

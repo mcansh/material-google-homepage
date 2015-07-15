@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Google</title>
     <meta charset="utf-8">
@@ -14,12 +14,15 @@
       <div class="brand">
         <h1>Search</h1>
       </div>
-      <div class="links"><a class="active">+User</a><a href="https://gmail.com">Gmail</a><a href="https://images.google.com">Images</a><a href="" class="box"><i class="material-icons">apps</i></a><a href="" class="notifications"><i class="material-icons">notifications</i></a><a href="" class="user"><i class="material-icons">person</i></a></div>
+      <div class="links"><a class="active">+User</a><a href="https://inbox.google.com">Gmail</a><a href="https://images.google.com">Images</a><a href="" class="box"><i class="material-icons">apps</i></a><a href="" class="notifications"><i class="material-icons">notifications</i></a><a href="" class="user"><i class="material-icons">person</i></a></div>
     </nav>
     <div class="main">
       <div class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Logo_Google_2013_Official.svg/1280px-Logo_Google_2013_Official.svg.png"></div>
       <div class="search">
-        <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search">
+        <form method="get" action="http://www.google.com/search">
+          <input type="text" placeholder="Search" name="q" size="31" maxlength="255" value="">
+          <input type="submit" name="sa" value="Search Google" style="display:none">
+        </form>
       </div>
     </div>
     <footer>
