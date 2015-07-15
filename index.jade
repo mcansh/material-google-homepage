@@ -1,7 +1,7 @@
 doctype html
 html
   head
-    title 
+    title Google
     meta(charset="utf-8")
     meta(name="viewport",content="width=device-width, initial-scale=1")
     link(rel="stylesheet",href="style.css")
@@ -14,32 +14,28 @@ html
         h1 Search
       .links
         a.active +User
-        a Gmail
-        a Images
-        a.box
+        a(href="https://gmail.com") Gmail
+        a(href="https://images.google.com") Images
+        a(href="").box
           i(class="material-icons") apps
-        a.notifications
+        a(href="").notifications
           i(class="material-icons") notifications
-        a.user
+        a(href="").user
           i(class="material-icons") person
           
     .main
       .logo
         img(src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Logo_Google_2013_Official.svg/1280px-Logo_Google_2013_Official.svg.png",style="width:40%")
       .search
-        .left-side
-          i(class="material-icons") search
-          p Search
-        .right-side
-          i(class="material-icons") mic
+        input(autocomplete="off",autocorrect="off",autocapitalize="off",spellcheck="false",placeholder="Search")
+
     
     footer
       .left-links
-        a Advertising
-        a Business
-        a About
+        a(href="https://www.google.com/intl/en/ads/?fg=1") Advertising
+        a(href="https://www.google.com/services/?fg=1") Business
+        a(href="https://www.google.com/intl/en/about.html?fg=1") About
       .right-links
-        a Privacy
-        a Terms
-        a Settings
-        a Use Google.co.uk
+        a(href="https://www.google.com/intl/en/policies/privacy/?fg=1") Privacy
+        a(href="https://www.google.com/intl/en/policies/terms/?fg=1") Terms
+        a(href="https://www.google.com/preferences?hl=en") Settings

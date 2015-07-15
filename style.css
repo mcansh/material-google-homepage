@@ -13,7 +13,8 @@ nav {
   align-items: center;
   flex-direction: row;
   line-height: 1.25em;
-  padding: 0 30px; }
+  padding: 0 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26); }
   nav .brand {
     display: flex;
     flex-grow: 1;
@@ -24,7 +25,8 @@ nav {
     nav .links a {
       color: #F5F5F5;
       padding: 0 10px;
-      transition: 100ms all ease-in-out; }
+      transition: 100ms all ease-in-out;
+      text-decoration: none; }
     nav .links .active {
       color: #062C92; }
     nav .links a:hover {
@@ -35,33 +37,29 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 120px); }
+  height: calc(100vh - 125px); }
   .main .logo {
     display: flex;
     justify-content: center;
     align-items: center; }
   .main .search {
     margin-top: 20px;
-    width: 720px;
+    width: 600px;
     height: 50px;
     background: #C0C0C0;
     display: flex;
     flex-direction: row;
     padding: 0 30px;
     align-items: center; }
-    .main .search .left-side {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      flex-grow: 1; }
-    .main .search p {
-      padding-left: 20px;
-      color: #F5F5F5; }
-    .main .search .material-icons {
-      color: #F5F5F5; }
-    .main .search .right-side {
-      display: flex;
-      align-items: center; }
+    .main .search input {
+      height: 90%;
+      width: 100%;
+      background: transparent;
+      padding: 0 30px;
+      margin: 0 -30px;
+      outline: none;
+      font-size: 1.1em;
+      font-family: "Roboto Condensed"; }
 
 footer {
   height: 50px;
@@ -73,6 +71,11 @@ footer {
   border-top: 1px solid #ddd;
   font-size: 14px; }
   footer a {
-    padding: 0 10px; }
+    padding: 0 10px;
+    text-decoration: none;
+    color: #444;
+    transition: 100ms all ease-in-out; }
+    footer a:hover {
+      color: black; }
   footer .left-links {
     flex-grow: 1; }
