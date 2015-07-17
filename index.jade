@@ -5,7 +5,6 @@ html(lang="en")
     meta(charset="utf-8")
     meta(name="viewport",content="width=device-width, initial-scale=1")
     link(rel="stylesheet",href="css/style.css")
-    link(rel="stylesheet",href="https://fonts.googleapis.com/icon?family=Material+Icons")
     link(rel="apple-touch-icon",href="https://www.google.com/images/google_favicon_128.png")
     link(rel="icon",href="http://www.google.com/favicon.ico")
   body
@@ -16,11 +15,11 @@ html(lang="en")
         a.active +User
         a(href="https://inbox.google.com") Gmail
         a(href="https://images.google.com") Images
-        a(href="").box
+        a.box(href="/apps")
           i(class="material-icons") apps
-        a(href="").notifications
+        a.notifications(href="")
           i(class="material-icons") notifications
-        a(href="").user
+        a.user(href="")
           i(class="material-icons") person
           
     .main

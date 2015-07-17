@@ -3,5 +3,7 @@ this was based on an image i found on [reddit](https://www.reddit.com/r/Design/c
 
 quickly put together, ~~could~~ will be better
 
+going to revamp using [MDL](http://getmdl.io)
+
 ## demo
 ![custom-google-search](custom-google-search.gif)

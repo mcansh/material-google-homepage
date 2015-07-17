@@ -1,6 +1,7 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed)
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500,700)
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons)
 $dark-blue: #062C92
-$blue: #1E6DE7
+$blue: #4688F1
 $white: #F5F5F5
 $silver: #C0C0C0
 $dark-white: #F2F2F2
@@ -8,12 +9,17 @@ $dark-white: #F2F2F2
   margin: 0
 
 body
-  font-family: "Roboto Condensed"
+  font-family: "Roboto"
   background: $white
-  width: 100vw
+h1
+  font-weight: 300
+h2,h3,h4,h5
+  font-weight: 400
+h6
+  font-weight: 500
 nav
   height: 70px
-  background: #1E6DE7
+  background: $blue
   display: flex
   align-items: center
   flex-direction: row
@@ -24,19 +30,22 @@ nav
     display: flex
     flex-grow: 1
     color: $white
+    align-items: center
+    height: 29px
   .links
     display: flex
     align-items: center
+
     a
       color: $white
       padding: 0 10px
       transition: 100ms all ease-in-out
       text-decoration: none
     .active
-      color: #062C92
+      color: $dark-blue
 
     a:hover
-      color: #062c92
+      color: $dark-blue
 
 .main
   display: flex
@@ -58,9 +67,11 @@ nav
     margin: 20px -30px 0 -30px
     outline: none
     font-size: 1.1em
-    font-family: "Roboto Condensed"
+    font-family: "Roboto"
     border-radius: 0px
     border: none
+  input[type="submit"]
+    display: none
 footer
   height: 50px
   display: flex
@@ -93,7 +104,6 @@ footer
   .main
     height: calc(100vh - 220px)
     padding: 30px 0
-    width: 100vw
     flex-grow: 1
     .logo
       img
