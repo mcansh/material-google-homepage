@@ -160,7 +160,8 @@ footer {
             justify-content: flex-start;
     margin-top: 60px; }
     .main input {
-      max-width: 60vw; } }
+      max-width: 60vw;
+      height: 40px; } }
 @media (max-width: 500px) {
   nav {
     padding: 0px 10px; }
@@ -178,7 +179,7 @@ footer {
       width: 50%; }
     .main input {
       max-width: 60vw;
-      height: 35px;
+      height: 40px;
       padding: 0 50px 0 10px; }
 
   footer {
