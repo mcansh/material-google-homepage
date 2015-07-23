@@ -11,6 +11,7 @@ $dark-white: #F2F2F2
 body
   font-family: "Roboto"
   background: $white
+  overflow-y: hidden
 h1
   font-weight: 300
 h2,h3,h4,h5
@@ -92,24 +93,28 @@ footer
     flex-grow: 1
 
 @media (max-width: 700px)
-  input
-    max-width: 60vw
+  .main
+    justify-content: flex-start
+    margin-top: 60px
+    input
+      max-width: 60vw
 @media (max-width: 500px)
   nav
     padding: 0px 10px
     .brand
       margin-right: 10px
-    a:nth-child(2)
+    .gmail,
+    .images,
+    .notifications
       display: none
   .main
-    // height: calc(100vh - 220px)
-    padding: 30px 0
-    flex-grow: 1
+    padding-top: 30px
+    height: calc(100vh - 140px)
     .logo
       img
         width: 50%
     input
-      max-width: 300px
+      max-width: 60vw
       height: 35px
       padding: 0 50px 0 10px
   footer
@@ -117,6 +122,8 @@ footer
     flex-direction: column
     justify-content: center
     padding-bottom: 20px
+    width: 100vw
+    padding: 0 0 20px 0
     .left-links
       flex-grow: 0
       padding: 20px 0

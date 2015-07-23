@@ -5,7 +5,8 @@
 
 body {
   font-family: "Roboto";
-  background: #F5F5F5; }
+  background: #F5F5F5;
+  overflow-y: hidden; }
 
 h1 {
   font-weight: 300; }
@@ -152,26 +153,31 @@ footer {
             flex-grow: 1; }
 
 @media (max-width: 700px) {
-  input {
-    max-width: 60vw; } }
+  .main {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-top: 60px; }
+    .main input {
+      max-width: 60vw; } }
 @media (max-width: 500px) {
   nav {
     padding: 0px 10px; }
     nav .brand {
       margin-right: 10px; }
-    nav a:nth-child(2) {
+    nav .gmail,
+    nav .images,
+    nav .notifications {
       display: none; }
 
   .main {
-    padding: 30px 0;
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1; }
+    padding-top: 30px;
+    height: calc(100vh - 140px); }
     .main .logo img {
       width: 50%; }
     .main input {
-      max-width: 300px;
+      max-width: 60vw;
       height: 35px;
       padding: 0 50px 0 10px; }
 
@@ -186,7 +192,9 @@ footer {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    width: 100vw;
+    padding: 0 0 20px 0; }
     footer .left-links {
       -webkit-box-flex: 0;
       -webkit-flex-grow: 0;
