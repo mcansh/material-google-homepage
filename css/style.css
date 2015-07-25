@@ -71,7 +71,7 @@ nav {
     nav .links a:hover {
       color: #062C92; }
 
-.main {
+main {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -90,7 +90,7 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   height: calc(100vh - 125px); }
-  .main .logo {
+  main .logo {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -103,9 +103,9 @@ nav {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
-    .main .logo img {
+    main .logo img {
       width: 40%; }
-  .main input {
+  main input {
     height: 50px;
     width: 600px;
     background: #C0C0C0;
@@ -116,7 +116,7 @@ nav {
     font-family: "Roboto";
     border-radius: 0px;
     border: none; }
-  .main input[type="submit"] {
+  main input[type="submit"] {
     display: none; }
 
 footer {
@@ -153,13 +153,13 @@ footer {
             flex-grow: 1; }
 
 @media (max-width: 700px) {
-  .main {
+  main {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
             justify-content: flex-start;
     margin-top: 60px; }
-    .main input {
+    main input {
       max-width: 60vw;
       height: 40px; } }
 @media (max-width: 500px) {
@@ -172,12 +172,12 @@ footer {
     nav .notifications {
       display: none; }
 
-  .main {
+  main {
     padding-top: 30px;
-    height: calc(100vh - 140px); }
-    .main .logo img {
+    height: calc(100vh - 250px); }
+    main .logo img {
       width: 50%; }
-    .main input {
+    main input {
       max-width: 60vw;
       height: 40px;
       padding: 0 50px 0 10px; }
