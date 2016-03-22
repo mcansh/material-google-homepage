@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500,700)
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons)
+@import "bourbon"
 $dark-blue: #062C92
 $blue: #4688F1
 $white: #F5F5F5
@@ -40,13 +41,24 @@ nav
     a
       color: $white
       padding: 0 10px
-      transition: 100ms all ease-in-out
+      +transition()
       text-decoration: none
     .active
       color: $dark-blue
 
     a:hover
       color: $dark-blue
+
+    .profile
+      +size(40px)
+      border-radius: 50%
+      background:
+        image: url(../img/profile.jpg)
+        size: cover
+        position: center
+      +transition()
+      &:hover
+        opacity: .7
 
 main
   display: flex
@@ -71,6 +83,9 @@ main
     border: none
   input[type="submit"]
     display: none
+
+
+
 footer
   height: 50px
   display: flex
@@ -126,3 +141,10 @@ footer
     .left-links
       flex-grow: 0
       padding: 20px 0
+
+@media (max-width: 320px)
+  main
+    height: 100vh
+    padding-top: 0px
+    margin-top: -30px
+    justify-content: center
