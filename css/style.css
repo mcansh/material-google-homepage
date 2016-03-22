@@ -64,7 +64,7 @@ nav {
       color: #F5F5F5;
       padding: 0 10px;
       -webkit-transition: 100ms all ease-in-out;
-              transition: 100ms all ease-in-out;
+      transition: 100ms all ease-in-out;
       text-decoration: none; }
     nav .links .active {
       color: #062C92; }
@@ -103,8 +103,6 @@ main {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
-    main .logo img {
-      width: 80%; }
   main input {
     height: 50px;
     width: 600px;
@@ -143,7 +141,7 @@ footer {
     text-decoration: none;
     color: #444;
     -webkit-transition: 100ms all ease-in-out;
-            transition: 100ms all ease-in-out; }
+    transition: 100ms all ease-in-out; }
     footer a:hover {
       color: black; }
   footer .left-links {
@@ -175,8 +173,8 @@ footer {
   main {
     padding-top: 30px;
     height: calc(100vh - 250px); }
-    main .logo img {
-      width: 50%; }
+    main .logo svg {
+      width: 90%; }
     main input {
       max-width: 60vw;
       height: 40px;
